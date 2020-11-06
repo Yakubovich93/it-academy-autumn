@@ -33,8 +33,8 @@ count_lines = int(input())
 lst_countries = []
 for line in range(count_lines):
     line = input().split()
-    var = {word: line[0] for word in line[1:]}
-    dct.update(var)
+    dct_of_city_and_country = {word: line[0] for word in line[1:]}
+    dct.update(dct_of_city_and_country)
 count_cities = int(input())
 for city in range(count_cities):
     city = input()
